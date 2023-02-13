@@ -18,6 +18,11 @@ label {
 a {
   text-decoration: none;
 }
+p,
+a {
+  font-size: 1.6rem;
+}
+
 /* project main variabels */
 :root {
   --colorbody-dark: #000000;
@@ -56,7 +61,7 @@ body {
 .left {
   width: 18vw;
   background-color: var(--colorbody-dark);
-  font-size: 1.2rem;
+  font-size: 2rem;
   border-right: 1px solid #262626;
   grid-area: 1 / 1 / 2 / 2;
 }
@@ -70,7 +75,7 @@ body {
 }
 /* nav bar header */
 .leftnav-pic {
-  width: 7rem;
+  width: 12rem;
   cursor: pointer;
   margin-top: 1rem;
 }
@@ -78,7 +83,7 @@ body {
 .left-navbar .left-list .left__bg {
   padding: 0.4rem;
   color: var(--colorfont-primary);
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.5rem;
   cursor: pointer;
 }
 .nav-link {
@@ -91,13 +96,14 @@ body {
 }
 /* before section */
 .left-navbar .left-list .left__bg::before {
-  margin-right: 9px;
+  margin-right: 1rem;
+
   padding-left: 2px;
   vertical-align: middle;
   display: inline-block;
   content: "";
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .left-navbar .left-list .lefticon-one::before {
   background: url(./assest/icons/home.png) no-repeat center;
@@ -142,8 +148,8 @@ body {
 .left-footer .leftfooter-text::before {
   content: "";
   display: inline-block;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2.2rem;
+  height: 2.2rem;
   background: url(./assest/icons/more.png) no-repeat center;
   background-size: cover;
   margin-right: 6px;
@@ -174,7 +180,7 @@ main {
   width: 70%;
   z-index: 0;
   margin-top: 2rem;
-  gap: 1rem;
+  gap: 2rem;
   scrollbar-width: none;
 }
 .story::-webkit-scrollbar {
@@ -184,7 +190,7 @@ main {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-width: 4.5rem;
+  min-width: 5rem;
   justify-content: center;
   align-items: center;
   margin-top: 0.4rem;
@@ -204,8 +210,8 @@ main {
   text-align: center;
 }
 .container-story {
-  width: 3.8rem;
-  height: 3.8rem;
+  width: 5rem;
+  height: 5rem;
   position: relative;
   border: 1px solid var(--colorbody-dark);
   border-radius: 100%;
@@ -216,10 +222,10 @@ main {
   background-image: var(--color-gradient);
   content: "";
   position: absolute;
-  top: -2px;
-  bottom: -2px;
-  right: -2px;
-  left: -2px;
+  top: -3px;
+  bottom: -3px;
+  right: -3px;
+  left: -3px;
   z-index: -1;
   border-radius: inherit;
   animation: gradeint 2s cubic-bezier(0.95, 0.11, 0.12, 0.94) infinite;
@@ -230,7 +236,7 @@ main {
   }
 }
 .storyone-marging {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 .story-one {
   background: url(./assest/stories/apple.jpeg) no-repeat center;
@@ -277,25 +283,26 @@ main {
 .information-post {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-.information-post img {
-  margin-right: 1.7rem;
+.posts-section .post .information-post img {
+  margin: 1rem 1rem 0 0;
+  width: 2rem;
 }
 .posts-section .post .information-post .desceription .first-p {
   color: var(--colorfont-primary);
   display: inline-block;
   font-weight: 700;
   font-style: bold;
-  height: 1.3rem;
+  height: 1.5rem;
 }
 .posts-section .post .information-post .desceription .first-p::before {
   vertical-align: top;
   display: inline-block;
   content: "";
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 4rem;
+  height: 4rem;
   margin-left: 1rem;
   margin-right: 0.7rem;
   border-radius: 100%;
@@ -307,13 +314,13 @@ main {
 .posts-section .post .information-post .desceription .second-p {
   color: var(--colorfont-secondary);
   display: inline-block;
-  margin-left: 0.3rem;
+  margin-left: 0.8rem;
 }
 .posts-section .post .information-post .desceription .therth-p {
   color: var(--colorfont-primary);
   font-weight: 300;
   font-style: normal;
-  margin-left: 4.5rem;
+  margin-left: 5.7rem;
 }
 /* image post */
 .imgpost {
@@ -327,6 +334,7 @@ main {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .left-iconpost {
   margin-left: 1rem;
@@ -338,8 +346,8 @@ main {
 .posticon-svg {
   color: var(--colorfont-primary);
   fill: transparent;
-  width: 17px;
-  height: 17px;
+  width: 25px;
+  height: 25px;
 }
 /*  post capsion  */
 .bolld-capsion {
@@ -377,13 +385,15 @@ main {
   line-height: 1.6;
 }
 .time-caption {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   display: inline-block;
 }
 .timefooter {
   display: flex;
-  height: 2rem;
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
+}
+.bolldcapsion-footer {
+  font-size: 1.4rem;
 }
 /* post section 2 */
 .imgpost-tow {
@@ -425,8 +435,8 @@ main {
 .left-sidebar .my-prof::before {
   content: "";
   display: inline-block;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   margin-right: 1rem;
   vertical-align: top;
   background: url(./assest/icons/IMG_20200307_032138_731.jpg) no-repeat center;
@@ -440,20 +450,18 @@ main {
 }
 .left-sidebar .my-name {
   font-weight: 300;
-  text-align: center;
-  font-size: 0.8rem;
-  width: 16rem;
-  margin: 0 0 2.2rem 0;
+  font-size: 1.2rem;
+  margin: 1rem 0 2.2rem 6.2rem;
 }
 .left-sidebar label {
   color: var(--colorfont-secondary);
   display: inline-block;
   font-weight: 300;
   font-style: normal;
-  font-size: 0.8rem;
-  width: 13.6rem;
-  text-align: center;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin-left: 4.7rem;
+  margin-bottom: 2rem;
+  margin-top: 0.7rem;
 }
 
 .left-sidebar a.profile {
@@ -465,8 +473,8 @@ main {
 .profile::before {
   content: "";
   display: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   margin-right: 1rem;
   vertical-align: top;
   border-radius: 100%;
@@ -495,40 +503,41 @@ main {
 .rightside-bar {
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 2.6rem;
   margin-top: 0.9rem;
 }
 .rightside-bar a {
   color: var(--colorlink-dark);
-  margin-right: 60rem;
+  margin-right: 15rem;
   margin-top: 0.7px;
   width: 5rem;
   padding: 0.3rem;
   text-align: center;
   font-weight: 400;
   display: block;
+  width: 10rem;
 }
 .rightside-bar a:hover {
   background-color: rgb(33, 33, 33);
   border-radius: 4px;
 }
-.rightside-bar .see-all-link {
+.rightside-bar :nth-child(2) {
   color: var(--colorfont-primary);
 }
-/*  sode bar footer */
+/*  side bar footer */
 .sidebar-footer {
   display: block;
 }
 .sidelink-container {
-  width: 18rem;
+  width: 25rem;
   margin-top: 1rem;
 }
 .sidebar-footer a {
   color: var(--colorfont-footerlink);
   margin-top: 1rem;
   font-weight: 400;
-  font-size: 0.8rem;
-  line-height: 1.2;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 .sidebar-footer a::after {
   content: ".";
@@ -542,8 +551,8 @@ main {
 .sidebar-footer a:hover {
   text-decoration: underline;
 }
-.sidebar-footer p {
+.sidebar-footer .sidebarfooter__text {
   color: var(--colorfont-footerlink);
+  font-size: 1.3rem;
   margin-top: 1.2rem;
-  font-size: 0.9rem;
 }
